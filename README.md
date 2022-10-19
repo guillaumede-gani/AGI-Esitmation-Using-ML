@@ -15,7 +15,7 @@ The method described above was done on pressure waveforms digitized at the sampl
 
 ### Machin Learning Approach
 
-The methodology used to estimate the AGI on low sampling frequency signals is quite simple. The first step was to find a large ammount of high quality data with a high sampling frequency. The dataset was found on Peter H Charlton website[^3] where a collection of various PPG waves are available.
+The methodology used to estimate the AGI on low sampling frequency signals is quite simple. The first step was to find a large ammount of high quality data with a high sampling frequency. The dataset was found on Peter H Charlton website[^3] where a collection of various PPG waves datasets are available.
 
 
 
