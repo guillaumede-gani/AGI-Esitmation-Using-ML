@@ -17,11 +17,10 @@ The method described above was done on pressure waveforms digitized at the sampl
 
 The methodology used to estimate the AGI on low sampling frequency signals is quite simple. The first step was to find a large ammount of high quality data with a high sampling frequency. The dataset was found on Peter H Charlton website[^3] where a collection of various PPG waves datasets are available.
 
-
-
-
+The dataset contains 4,374 virtual subjects between the age of 25-75 at 500hz sampling rate[^4] on which I applied a custom AGI estimation algorithm to create the training set. To find the AGI I use various aproaches to find the fiducial points on the Second Derivative and then give that value to each PPG wavelette. Once all the 4, 374 waveletts have been labeled I augment the data by down samplin it to 50hz to simulation the type of data measured by lower quality oximeters. Using this method I optained rought 50000 labeled waveletts with a sampling rate of 50hz on which I can train various regression method to try and find the AGI coreponding to the wave.  
 
 ## References
 [^1]: Takazawa K, Tanaka N, Fujita M, et al. Assessment of vasoactive agents and vascular aging by the second derivative of photoplethysmogram waveform. Hypertension. 1998
 [^2]: Bortolotto LA, Blacher J, Kondo T, Takazawa K, Safar ME. Assessment of vascular aging and atherosclerosis in hypertensive subjects: second derivative of photoplethysmogram versus pulse wave velocity. Am J Hypertens. 2000
 [^3]: https://peterhcharlton.github.io/
+[^4]: https://journals.physiology.org/doi/full/10.1152/ajpheart.00218.2019
